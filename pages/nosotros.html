@@ -23,12 +23,8 @@
 
 <body>
 
-  <!-- HEADER -->
   <header>
-
-    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-
       <div class="container-fluid">
 
         <a class="navbar-brand" href="/index.html">
@@ -38,14 +34,10 @@
         <button class="navbar-toggler" type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNavAltMarkup">
-
           <span class="navbar-toggler-icon"></span>
-
         </button>
 
-        <div class="collapse navbar-collapse justify-content-end"
-          id="navbarNavAltMarkup">
-
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
           <div class="navbar-nav">
 
             <a class="nav-link" href="/index.html">
@@ -56,13 +48,10 @@
               <i class="fa-solid fa-user"></i> Login
             </a>
 
-            <!-- BOTÓN SUSCRIBIRSE -->
             <button class="btn btn-warning mx-2"
               data-bs-toggle="modal"
               data-bs-target="#modalSuscripcion">
-
               Suscribirse
-
             </button>
 
             <a class="nav-link" href="#">
@@ -77,197 +66,143 @@
         </div>
       </div>
     </nav>
-
     <!-- MODAL SUSCRIPCIÓN -->
-    <div class="modal fade" id="modalSuscripcion" tabindex="-1">
+<div class="modal fade" id="modalSuscripcion" tabindex="-1">
 
-      <div class="modal-dialog">
+  <div class="modal-dialog">
 
-        <div class="modal-content">
+    <div class="modal-content">
 
-          <div class="modal-header">
+      <div class="modal-header">
 
-            <h5 class="modal-title">
-              Suscribirse al Blog
-            </h5>
+        <h5 class="modal-title">
+          Suscribirse al Blog
+        </h5>
 
-            <button type="button"
-              class="btn-close"
-              data-bs-dismiss="modal">
-            </button>
-
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal">
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label class="form-label">
+              Nombre
+            </label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Ingrese su nombre">
           </div>
-
-          <div class="modal-body">
-
-            <form>
-
-              <div class="mb-3">
-
-                <label class="form-label">
-                  Nombre
-                </label>
-
-                <input type="text"
-                  class="form-control"
-                  placeholder="Ingrese su nombre">
-
-              </div>
-
-              <div class="mb-3">
-
-                <label class="form-label">
-                  Email
-                </label>
-
-                <input type="email"
-                  class="form-control"
-                  placeholder="Ingrese su email">
-
-              </div>
-
-              <button type="submit"
-                class="btn btn-success w-100">
-
-                Suscribirme
-
-              </button>
-
-            </form>
-
+          <div class="mb-3">
+            <label class="form-label">
+              Email
+            </label>
+            <input
+              type="email"
+              class="form-control"
+              placeholder="Ingrese su email">
           </div>
-        </div>
+          <button
+            type="submit"
+            class="btn btn-success w-100">
+            Suscribirme
+          </button>
+        </form>
       </div>
     </div>
-
+  </div>
+</div>
   </header>
 
-  <!-- MAIN -->
-  <main class="container">
+  <main class="container nosotros-page">
 
-    <!-- PRESENTACIÓN -->
-    <section class="text-center my-5">
+    <section class="presentacion-nosotros text-center my-5">
+      <h1 class="titulo-nosotros">Sobre Nosotros</h1>
 
-      <h1>Sobre Nosotros</h1>
-
-      <p>
-        Somos un equipo apasionado por la cocina y las recetas de
-        supervivencia, enfocados en compartir ideas prácticas,
-        accesibles y funcionales para cualquier situación.
+      <p class="texto-nosotros">
+        Somos un equipo apasionado por la cocina y las recetas de supervivencia,
+        enfocados en compartir ideas prácticas, accesibles y funcionales
+        para cualquier situación.
       </p>
-
     </section>
 
-    <!-- MISIÓN -->
-    <section class="my-5">
+    <section class="mision-nosotros my-5">
+      <div class="card card-mision p-4">
+        <h2 class="subtitulo-nosotros text-center">Nuestra Misión</h2>
 
-      <div class="card p-4">
-
-        <h2 class="text-center">
-          Nuestra Misión
-        </h2>
-
-        <p class="text-center">
+        <p class="texto-nosotros text-center">
           Brindar recetas útiles, rápidas y pensadas para resolver
           necesidades reales, manteniendo una experiencia clara
           y moderna para todos los usuarios.
         </p>
-
       </div>
-
     </section>
 
-    <!-- FRASE GRUPAL -->
-    <section class="text-center my-5">
-
-      <blockquote>
+    <section class="frase-nosotros text-center my-5">
+      <blockquote class="frase-grupal">
         “La mejor receta no siempre necesita lujo,
         sino ingenio, práctica y ganas de seguir adelante.”
       </blockquote>
-
     </section>
 
-    <!-- EQUIPO -->
-    <section class="my-5">
-
-      <h2 class="text-center mb-4">
-        Nuestro Equipo
-      </h2>
+    <section class="equipo-nosotros my-5">
+      <h2 class="subtitulo-nosotros text-center mb-4">Nuestro Equipo</h2>
 
       <div class="row text-center">
 
         <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
           <img src="/assets/isaias.jpg" alt="Isaías" class="team-img">
-          <h5>Isaías</h5>
+          <h5 class="nombre-equipo">Isaías</h5>
         </div>
 
         <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
           <img src="/assets/comp1.jpg" alt="Compañero 1" class="team-img">
-          <h5>Compañero 1</h5>
+          <h5 class="nombre-equipo">Compañero 1</h5>
         </div>
 
         <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
           <img src="/assets/comp2.jpg" alt="Compañero 2" class="team-img">
-          <h5>Compañero 2</h5>
+          <h5 class="nombre-equipo">Compañero 2</h5>
         </div>
 
         <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
           <img src="/assets/comp3.jpg" alt="Compañero 3" class="team-img">
-          <h5>Compañero 3</h5>
+          <h5 class="nombre-equipo">Compañero 3</h5>
         </div>
 
       </div>
-
     </section>
 
   </main>
 
-  <!-- FOOTER -->
   <footer class="bg-dark text-white py-4">
-
     <div class="container">
-
       <div class="row text-center text-md-start">
 
         <div class="col-12 col-md-6 col-lg-4 mb-4">
-
-          <h4>
-            <i class="fa-solid fa-utensils"></i>
-            Recetas Locas
-          </h4>
-
-          <p>
-            El mejor blog de recetas fáciles.
-          </p>
-
+          <h4><i class="fa-solid fa-utensils"></i> Recetas Locas</h4>
+          <p>El mejor blog de recetas fáciles.</p>
         </div>
 
         <div class="col-12 col-md-6 col-lg-4 mb-4">
-
           <h5>Redes Sociales</h5>
-
           <p>Facebook</p>
           <p>Instagram</p>
           <p>YouTube</p>
-
         </div>
 
         <div class="col-12 col-md-12 col-lg-4 mb-4">
-
           <h5>Información</h5>
-
-          <p>
-            Contacto: recetaslocas@gmail.com
-          </p>
-
+          <p>Contacto: recetaslocas@gmail.com</p>
         </div>
 
       </div>
     </div>
-
   </footer>
 
-  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
