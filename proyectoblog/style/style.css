@@ -1,0 +1,28 @@
+body {
+    background: #fcb044;
+    background: linear-gradient(90deg,
+    rgba(252, 176, 68, 1) 42%,
+    rgba(255, 241, 115, 1) 100%);
+
+    padding-top: 80px;
+}
+
+main{
+    margin-top: 20px;
+}
+
+.carousel{
+    margin-top: 20px;
+}
+
+.carousel img{
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card img{
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+}

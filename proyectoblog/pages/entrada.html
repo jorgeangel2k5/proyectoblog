@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizza Casera - Recetas Locas</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/style/style.css">
+</head>
+
+<body>
+
+  <header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+      <div class="container-fluid">
+
+        <a class="navbar-brand" href="#">
+          <i class="fa-solid fa-utensils"></i> Recetas Locas
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="/index.html"> <i class="fa-solid fa-house"></i> Inicio </a>
+            <a class="nav-link" href="#"> <i class="fa-solid fa-user"></i> Login </a>
+            <button class="btn btn-warning mx-2" data-bs-toggle="modal" data-bs-target="#modalSuscripcion">Suscribirse</button>
+            <a class="nav-link" href="#"> <i class="fa-solid fa-envelope"></i> Contacto </a>
+            <a class="nav-link" href="#"> <i class="fa-solid fa-circle-info"></i> Nosotros </a>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+
+    <div class="modal fade" id="modalSuscripcion" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h5 class="modal-title">Suscribirse al Blog</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+
+          <div class="modal-body">
+            <form>
+
+              <div class="mb-3">
+                <label class="form-label">Nombre</label>
+                <input type="text" class="form-control" placeholder="Ingrese su nombre">
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" placeholder="Ingrese su email">
+              </div>
+
+              <button type="submit" class="btn btn-success w-100">Suscribirme</button>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+
+  <main class="container mt-5 pt-3">
+
+    <div class="row">
+
+      <div class="col-12 col-md-8">
+
+        <img src="/proyectoblog/assets/pizza1.jpg" class="img-fluid rounded mb-3" alt="Pizza Casera">
+
+        <h2>Pizza Casera con 1 kg de Harina</h2>
+
+        <p class="text-muted">
+          <i class="fa-solid fa-user me-1"></i> Gonzalo Dacovich
+          &nbsp;|&nbsp;
+          <i class="fa-regular fa-calendar me-1"></i> 20 de mayo, 2025
+          &nbsp;|&nbsp;
+          <i class="fa-solid fa-tag me-1"></i> Comidas
+        </p>
+
+        <hr>
+
+        <div class="row text-center mb-3 g-2">
+
+          <div class="col-4">
+            <div class="border rounded p-3">
+              <i class="fa-solid fa-clock fa-lg text-warning mb-1 d-block"></i>
+              <small class="text-muted d-block">Amasado</small>
+              <strong>5 min</strong>
+            </div>
+          </div>
+
+          <div class="col-4">
+            <div class="border rounded p-3">
+              <i class="fa-solid fa-fire fa-lg text-warning mb-1 d-block"></i>
+              <small class="text-muted d-block">Fermentación</small>
+              <strong>15+ min</strong>
+            </div>
+          </div>
+
+          <div class="col-4">
+            <div class="border rounded p-3">
+              <i class="fa-solid fa-users fa-lg text-warning mb-1 d-block"></i>
+              <small class="text-muted d-block">Rinde</small>
+              <strong>2-3 pizzas</strong>
+            </div>
+          </div>
+
+        </div>
+
+        <hr>
+
+        <p>
+          Esta receta de pizza casera, presentada por el maestro pizzero Gonzalo Dacovich, utiliza la técnica de
+          amasado directo, ideal para quienes no cuentan con amasadora mecánica. Con ingredientes simples y un
+          proceso bien explicado, vas a poder preparar una pizza profesional en casa.
+        </p>
+
+        <p>
+          La clave está en el agua fría, la técnica de plegado y los tiempos de reposo. Seguí los pasos al pie
+          de la letra y el resultado va a sorprenderte.
+        </p>
+
+        <h4>Ingredientes</h4>
+
+        <ul>
+          <li>1 kg de harina 000 (con 9-10% de proteína, se recomienda Molino Campodónico)</li>
+          <li>650 g de agua fría (de heladera, entre 6 y 8 °C)</li>
+          <li>15 g de levadura fresca (o 5 g de levadura seca)</li>
+          <li>25 g de sal</li>
+          <li>25 g de aceite de oliva</li>
+        </ul>
+
+        <h4>Preparación</h4>
+
+        <ol>
+          <li class="mb-2"><strong>Activar la levadura:</strong> Disolvé la levadura en el agua fría usando un batidor. Es importante que el agua esté entre 6 y 8 °C, directamente de la heladera.</li>
+          <li class="mb-2"><strong>Mezcla inicial:</strong> Incorporá el 50% de la harina (500 g) al agua con levadura y mezclá hasta obtener una pasta homogénea sin grumos. Luego agregá el resto de la harina en dos o tres partes hasta que no quede harina suelta.</li>
+          <li class="mb-2"><strong>Agregar sal y aceite:</strong> Una vez integrada toda la harina, incorporá los 25 g de sal y los 25 g de aceite de oliva y seguí mezclando.</li>
+          <li class="mb-2"><strong>Amasado a mano:</strong> Amasá de forma continua y veloz durante 5 minutos usando la técnica de plegado: plegá la masa hacia el centro y enrollá, usando la fuerza del cuerpo. Evitá desgarrar la masa para no romper la red de gluten.</li>
+          <li class="mb-2"><strong>Primer reposo:</strong> Dejá descansar la masa en bloque durante 15 minutos tapada con un repasador o film.</li>
+          <li class="mb-2"><strong>Segundo plegado:</strong> Realizá un segundo plegado suave para mejorar la textura y dejá fermentar a temperatura de entre 25 y 30 °C hasta que duplique su volumen.</li>
+          <li class="mb-2"><strong>Bollado:</strong> Una vez fermentada, dividí la masa en bollos de 350 g para pizza a la piedra o de 380 g para pizza al molde. Cerrá los bollos con cuidado para no expulsar el gas carbónico generado en la fermentación.</li>
+        </ol>
+        <hr>
+        <iframe container width="560" height="315" src="https://www.youtube.com/embed/h6JCdiLePUg?si=_6h3wFAOPqQ10vdw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <hr>
+
+        <h4>Comentarios</h4>
+
+        <div class="card mb-2">
+          <div class="card-body">
+            <h6 class="card-title">María López</h6>
+            <p class="text-muted small"><i class="fa-regular fa-calendar me-1"></i> 18 de mayo, 2025</p>
+            <p class="card-text">¡Quedó increíble! Le agregué morrones y salchichas. Muy buena receta.</p>
+          </div>
+        </div>
+
+        <div class="card mb-2">
+          <div class="card-body">
+            <h6 class="card-title">Carlos Fernández</h6>
+            <p class="text-muted small"><i class="fa-regular fa-calendar me-1"></i> 17 de mayo, 2025</p>
+            <p class="card-text">La hice el fin de semana con los chicos. Salió perfecta, la masa quedó muy esponjosa.</p>
+          </div>
+        </div>
+
+        <div class="card mb-2">
+          <div class="card-body">
+            <h6 class="card-title">Laura Gómez</h6>
+            <p class="text-muted small"><i class="fa-regular fa-calendar me-1"></i> 15 de mayo, 2025</p>
+            <p class="card-text">Nunca había hecho pizza casera y me salió bárbaro. El truco de la levadura es clave.</p>
+          </div>
+        </div>
+
+        <div class="card mb-2">
+          <div class="card-body">
+            <h6 class="card-title">Martín Torres</h6>
+            <p class="text-muted small"><i class="fa-regular fa-calendar me-1"></i> 12 de mayo, 2025</p>
+            <p class="card-text">Excelente receta. Le puse jamón y morrones y quedó de restaurant. La voy a repetir.</p>
+          </div>
+        </div>
+
+        <div class="card mb-4">
+          <div class="card-body">
+            <h6 class="card-title">Sofía Ramírez</h6>
+            <p class="text-muted small"><i class="fa-regular fa-calendar me-1"></i> 10 de mayo, 2025</p>
+            <p class="card-text">Muy clara la explicación paso a paso. Ideal para los que recién empiezan en la cocina.</p>
+          </div>
+        </div>
+
+        <h4>Dejá tu comentario</h4>
+
+        <form>
+
+          <div class="mb-3">
+            <label class="form-label">Nombre</label>
+            <input type="text" class="form-control" placeholder="Ingrese su nombre">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" placeholder="Ingrese su email">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Comentario</label>
+            <textarea class="form-control" rows="4" placeholder="Contanos qué te pareció la receta..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-dark">Enviar comentario</button>
+
+        </form>
+
+        <hr>
+
+        <a href="/proyectoblog/index.html" class="btn btn-dark mb-4">
+          <i class="fa-solid fa-arrow-left me-1"></i> Volver al inicio
+        </a>
+
+      </div>
+
+      <div class="col-12 col-md-4">
+
+        <div class="mb-4">
+          <h4>Buscar</h4>
+          <input type="text" class="form-control" placeholder="Buscar receta">
+        </div>
+
+        <div class="mb-4">
+          <h4>Categorías</h4>
+          <ul class="list-group">
+            <li class="list-group-item">Postres</li>
+            <li class="list-group-item">Comidas</li>
+            <li class="list-group-item">Bebidas</li>
+          </ul>
+        </div>
+
+        <div class="d-none d-md-block border p-4 text-center mb-4">
+          <h4>
+            <i class="fa-solid fa-book"></i>
+            Nuestro Recetario
+          </h4>
+          <p>Adquirí nuestro recetario con las mejores recetas caseras.</p>
+          <button class="btn btn-warning">Comprar ahora</button>
+        </div>
+
+        <div id="carouselEntrada" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/proyectoblog/assets/carrousel1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="/proyectoblog/assets/carrousel2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="/proyectoblog/assets/carrousel3.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row text-center text-md-start">
+
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <h4><i class="fa-solid fa-utensils"></i> Recetas Locas</h4>
+          <p>El mejor blog de recetas fáciles.</p>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <h5 class="mb-3">Redes Sociales</h5>
+          <p>
+            <a href="https://www.facebook.com" target="_blank" class="text-white text-decoration-none">
+              <i class="fa-brands fa-facebook me-2"></i> Facebook
+            </a>
+          </p>
+          <p>
+            <a href="https://www.instagram.com" target="_blank" class="text-white text-decoration-none">
+              <i class="fa-brands fa-instagram me-2"></i> Instagram
+            </a>
+          </p>
+          <p>
+            <a href="https://www.youtube.com" target="_blank" class="text-white text-decoration-none">
+              <i class="fa-brands fa-youtube me-2"></i> YouTube
+            </a>
+          </p>
+        </div>
+
+        <div class="col-12 col-md-12 col-lg-4 mb-4">
+          <h5>Información</h5>
+          <p>Contacto: recetaslocas@gmail.com</p>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

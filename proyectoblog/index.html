@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Recetas Locas</title>
+  <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/style/style.css">
+
+</head>
+
+<body>
+
+ 
+<header>
+
+    <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+    <div class="container-fluid">
+
+    <a class="navbar-brand" href="#">
+      <i class="fa-solid fa-utensils"></i> Recetas Locas </a>
+
+   
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+
+      <span class="navbar-toggler-icon"></span>
+
+     </button>
+
+     <!-- LINKS -->
+     <div class="collapse navbar-collapse justify-content-end"
+      id="navbarNavAltMarkup">
+
+      <div class="navbar-nav">
+
+        <a class="nav-link active" href="/index.html"> <i class="fa-solid fa-house"></i> Inicio </a>
+        <a class="nav-link" href="#"> <i class="fa-solid fa-user"></i> Login </a>
+        <button class="btn btn-warning mx-2" data-bs-toggle="modal" data-bs-target="#modalSuscripcion">Suscribirse</button>      
+        <a class="nav-link" href="#"> <i class="fa-solid fa-envelope"></i> Contacto </a>
+        <a class="nav-link" href="#"> <i class="fa-solid fa-circle-info"></i> Nosotros </a>
+
+      </div>
+     </div>
+    </div>
+  </nav>
+
+   <!-- MODAL -->
+   <div class="modal fade" id="modalSuscripcion" tabindex="-1">
+
+   <div class="modal-dialog">
+
+    <div class="modal-content">
+
+      <div class="modal-header">
+
+        <h5 class="modal-title">
+          Suscribirse al Blog
+        </h5>
+
+        <button type="button"
+          class="btn-close"
+          data-bs-dismiss="modal">
+        </button>
+
+      </div>
+
+      <div class="modal-body">
+
+        <form>
+
+          <div class="mb-3">
+            <label class="form-label">Nombre</label>
+
+            <input type="text"
+              class="form-control"
+              placeholder="Ingrese su nombre">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+
+            <input type="email"
+              class="form-control"
+              placeholder="Ingrese su email">
+          </div>
+
+          <button type="submit"
+            class="btn btn-success w-100">
+
+            Suscribirme
+
+          </button>
+
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+
+
+<main class="container">
+
+  <!-- SLIDER -->
+
+  <div class="row">
+
+    <!-- ENTRADAS -->
+    <div class="col-12 col-md-8">
+
+      <div class="card mb-2">
+
+        <img src="assets/pizza1.jpg" class="card-img-top" alt="">
+
+        <div class="card-body">
+
+          <h3>Pizza Casera</h3>
+
+          <p>
+            Aprende a preparar una pizza fácil y rápida.
+          </p>
+
+          <a href="/proyectoblog/pages/entrada.html" class="btn btn-dark">
+            Ver más
+          </a>
+
+        </div>
+
+      </div>
+
+      <div class="card mb-2">
+
+        <img src="assets/hamburguesa1.jpg" class="card-img-top" alt="">
+
+        <div class="card-body">
+
+          <h3>Hamburguesa</h3>
+
+          <p>
+            Una hamburguesa deliciosa para compartir.
+          </p>
+
+          <a href="entrada.html" class="btn btn-dark">
+            Ver más
+          </a>
+
+        </div>
+
+      </div>
+
+      <div class="card mb-2">
+
+        <img src="assets/chocotorta.jpg" class="card-img-top" alt="">
+
+        <div class="card-body">
+
+          <h3>Postres</h3>
+
+          <p>
+            Ideas dulces para cualquier momento.
+          </p>
+
+          <a href="entrada.html" class="btn btn-dark">
+            Ver más
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- PAGINACION -->
+      <nav>
+
+        <ul class="pagination">
+
+          <li class="page-item">
+            <a class="page-link" href="#">1</a>
+          </li>
+
+          <li class="page-item">
+            <a class="page-link" href="#">2</a>
+          </li>
+
+          <li class="page-item">
+            <a class="page-link" href="#">3</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+    </div>
+
+    <!-- SIDEBAR -->
+    <div class="col-12 col-md-4">
+
+      <!-- BUSCADOR -->
+      <div class="mb-4">
+
+        <h4>Buscar</h4>
+
+        <input type="text"
+          class="form-control"
+          placeholder="Buscar receta">
+
+      </div>
+
+      <!-- CATEGORIAS -->
+      <div class="mb-4">
+
+        <h4>Categorías</h4>
+
+        <ul class="list-group">
+
+          <li class="list-group-item">
+            Postres
+          </li>
+
+          <li class="list-group-item">
+            Comidas
+          </li>
+
+          <li class="list-group-item">
+            Bebidas
+          </li>
+
+        </ul>
+
+      </div>
+
+      <!-- PUBLICIDAD -->
+     <div class="d-none d-md-block border p-4 text-center mb-4">
+
+  <h4>
+    <i class="fa-solid fa-book"></i>
+    Nuestro Recetario
+  </h4>
+
+  <p>
+    Adquirí nuestro recetario con las mejores recetas caseras.
+  </p>
+
+  <button class="btn btn-warning">
+    Comprar ahora
+  </button>
+
+</div>
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="assets/carrousel1.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="assets/carrousel2.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="assets/carrousel3.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+</div>
+    </div>
+
+  </div>
+
+</main>
+
+
+ <footer class="bg-dark text-white py-4">
+  <div class="container">
+    <div class="row text-center text-md-start">
+      
+      <div class="col-12 col-md-6 col-lg-4 mb-4">
+        <h4><i class="fa-solid fa-utensils"></i> Recetas Locas</h4>
+        <p>El mejor blog de recetas fáciles.</p>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4 mb-4">
+  <h5 class="mb-3">Redes Sociales</h5>
+  
+  <p>
+    <a href="https://www.facebook.com" target="_blank" class="text-white text-decoration-none">
+      <i class="fa-brands fa-facebook me-2"></i> Facebook
+    </a>
+  </p>
+
+  <p>
+    <a href="https://www.instagram.com" target="_blank" class="text-white text-decoration-none">
+      <i class="fa-brands fa-instagram me-2"></i> Instagram
+    </a>
+  </p>
+
+  <p>
+    <a href="https://www.youtube.com" target="_blank" class="text-white text-decoration-none">
+      <i class="fa-brands fa-youtube me-2"></i> YouTube
+    </a>
+  </p>
+</div>
+
+      <div class="col-12 col-md-12 col-lg-4 mb-4">
+        <h5>Información</h5>
+        <p>Contacto: recetaslocas@gmail.com</p>
+      </div>
+
+    </div>
+  </div>
+</footer>
+ 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
