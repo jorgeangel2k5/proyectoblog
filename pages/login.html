@@ -2,173 +2,229 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciar Sesión</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar Sesión - Recetas Locas</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <style>
-        .bg-login-image {
-            background-image: url('https://www.carniceriademadrid.es/wp-content/uploads/2022/09/smash-burger-que-es.jpg');
-            background-size: cover;
-            background-position: center;
-            min-height: 100vh;
-        }
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍴</text></svg>">
+  <style>
+    .bg-login-image {
+      background-image: url('https://www.carniceriademadrid.es/wp-content/uploads/2022/09/smash-burger-que-es.jpg');
+      background-size: cover;
+      background-position: center;
+      min-height: 100vh;
+    }
 
-        .full-height {
-            min-height: 100vh;
-        }
+    .full-height {
+      min-height: 100vh;
+    }
 
-        body {
-            background: #fcb044;
-            background: linear-gradient(90deg,
-                    rgba(252, 176, 68, 1) 42%,
-                    rgba(255, 241, 115, 1) 100%);
-
-        }
-    </style>
+    body {
+      background: #fcb044;
+      background: linear-gradient(90deg,
+          rgba(252, 176, 68, 1) 42%,
+          rgba(255, 241, 115, 1) 100%);
+      padding-top: 56px; /* Espacio para que el Navbar fixed-top no tape el contenido */
+    }
+  </style>
 </head>
 
 <body class="bg-light">
+
+  <header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container-fluid">
-        <div class="row full-height align-items-center">
+      
+      <a class="navbar-brand" href="../index.html">
+        <i class="fa-solid fa-utensils"></i> Recetas Locas
+      </a>
 
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-            <div class="col-12 col-md-6 d-flex align-items-center justify-content-center py-5">
-                <div class="w-100 px-4" style="max-width: 450px;">
-
-                    <h2 class="fw-bold mb-4 text-center text-md-start">Bienvenido</h2>
-
-
-                    <form>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Usuario o Correo Electrónico</label>
-                            <input type="email" class="form-control" id="email" placeholder="ejemplo@correo.com"
-                                required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="password" class="form-label">Contraseña</label>
-                            <input type="password" class="form-control" id="password" placeholder="••••••••" required>
-                        </div>
-                        <div class="mb-3 form-check">
-                            <input type="checkbox" name="connected" class="form-check-input" id="connected" />
-                            <label for="connected" class="form-check-label">Mantenerme Conectado</label>
-                        </div>
-
-
-
-
-                        <div class="mb-3 text-end">
-                            <a href="#" class="text-decoration-none small" data-bs-toggle="modal"
-                                data-bs-target="#recoverModal">
-                                ¿Olvidaste tu contraseña?
-                            </a>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary w-100 py-2 mb-4">Ingresar</button>
-                    </form>
-
-
-                    <div class="d-flex align-items-center my-3">
-                        <hr class="flex-grow-1 text-muted">
-                        <span class="mx-2 text-muted small">O ingresa con</span>
-                        <hr class="flex-grow-1 text-muted">
-                    </div>
-
-
-                    <div class="d-grid gap-2">
-                        <a href="#"
-                            class="btn btn-outline-danger d-flex align-items-center justify-content-center gap-2">
-                            <i class="bi bi-google"></i> Continuar con Google
-                        </a>
-                        <a href="#"
-                            class="btn btn-outline-primary d-flex align-items-center justify-content-center gap-2">
-                            <i class="bi bi-facebook"></i> Continuar con Facebook
-                        </a>
-                    </div>
-
-                </div>
-            </div>
-
-
-            <div class="col-md-6 d-none d-md-block bg-login-image px-0">
-            </div>
-
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" href="../index.html"> <i class="fa-solid fa-house"></i> Inicio </a>
+          <a class="nav-link active" href="./login.html"> <i class="fa-solid fa-user"></i> Login </a>
+          <button class="btn btn-warning mx-2" data-bs-toggle="modal" data-bs-target="#modalSuscripcion">Suscribirse</button>      
+          <a class="nav-link" href="./galeria.html"> <i class="fa-solid fa-image"></i> Galería </a>
+          <a class="nav-link" href="./contacto.html"> <i class="fa-solid fa-envelope"></i> Contacto </a>
+          <a class="nav-link" href="./nosotros.html"> <i class="fa-solid fa-circle-info"></i> Nosotros </a>
         </div>
+      </div>
     </div>
+  </nav>
 
-    <div class="modal fade" id="recoverModal" tabindex="-1" aria-labelledby="recoverModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-md">
-            <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
-
-
-                <div class="bg-primary text-white p-4 text-center">
-                    <div class="mb-3">
-                        <i class="fa-solid fa-lock fs-1"></i>
-                    </div>
-
-                    <h4 class="fw-bold mb-1" id="recoverModalLabel">
-                        ¿Olvidaste tu contraseña?
-                    </h4>
-
-                    <p class="mb-0 small opacity-75">
-                        Recupera el acceso a tu cuenta en pocos pasos
-                    </p>
-                </div>
-
-
-                <div class="modal-body p-4">
-
-                    <div class="alert alert-light border d-flex align-items-start gap-3 rounded-3">
-                        <i class="fa-solid fa-envelope text-primary fs-5 mt-1"></i>
-
-                        <div class="small text-muted">
-                            Ingresa el correo asociado a tu cuenta y te enviaremos
-                            un enlace seguro para restablecer tu contraseña.
-                        </div>
-                    </div>
-
-                    <form>
-
-                        <div class="mb-4">
-                            <label for="recoverEmail" class="form-label fw-semibold">
-                                Correo Electrónico
-                            </label>
-
-                            <div class="input-group">
-                                <span class="input-group-text bg-white">
-                                    <i class="fa-solid fa-at text-muted"></i>
-                                </span>
-
-                                <input type="email" class="form-control py-2" id="recoverEmail"
-                                    placeholder="tu-correo@ejemplo.com" required>
-                            </div>
-                        </div>
-                        <button type="submit" class="btn btn-primary w-100 py-2 fw-semibold rounded-3">
-                            <i class="fa-solid fa-paper-plane me-2"></i>
-                            Enviar enlace de recuperación
-                        </button>
-
-                    </form>
-
-                </div>
-
-
-                <div class="modal-footer border-0 justify-content-center pb-4">
-
-                    <button type="button" class="btn btn-outline-secondary rounded-pill px-4" data-bs-dismiss="modal">
-
-                        Cerrar
-                    </button>
-
-                </div>
-
-            </div>
+  <div class="modal fade" id="modalSuscripcion" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content text-dark">
+        <div class="modal-header">
+          <h5 class="modal-title">Suscribirse al Blog</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
         </div>
+        <div class="modal-body">
+          <form action="./404.html"> 
+            <div class="mb-3">
+              <label class="form-label">Nombre</label>
+              <input type="text" class="form-control" placeholder="Ingrese su nombre" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-control" placeholder="Ingrese su email" required>
+            </div>
+            <button type="submit" class="btn btn-warning shadow-sm fw-medium w-100">Suscribirme</button>
+          </form>
+        </div>
+      </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  </div>
+</header>
+
+  <main class="container-fluid">
+    <div class="row full-height align-items-center">
+
+      <div class="col-12 col-md-6 d-flex align-items-center justify-content-center py-5">
+        <div class="w-100 px-4" style="max-width: 450px;">
+          <h2 class="fw-bold mb-4 text-center text-md-start text-dark">Bienvenido</h2>
+
+          <form action="./404.html"> <div class="mb-3">
+              <label for="email" class="form-label text-dark fw-medium">Usuario o Correo Electrónico</label>
+              <input type="email" class="form-control" id="email" placeholder="ejemplo@correo.com" required>
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label text-dark fw-medium">Contraseña</label>
+              <input type="password" class="form-control" id="password" placeholder="••••••••" required>
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" name="connected" class="form-check-input" id="connected" />
+              <label for="connected" class="form-check-label text-dark">Mantenerme Conectado</label>
+            </div>
+
+            <div class="mb-3 text-end">
+              <a href="#" class="text-decoration-none small fw-medium link-dark" data-bs-toggle="modal" data-bs-target="#recoverModal">
+                ¿Olvidaste tu contraseña?
+              </a>
+            </div>
+
+            <button type="submit" class="btn btn-dark w-100 py-2 mb-4 shadow-sm">Ingresar</button>
+          </form>
+
+          <div class="d-flex align-items-center my-3">
+            <hr class="flex-grow-1 text-dark">
+            <span class="mx-2 text-dark small fw-medium">O ingresa con</span>
+            <hr class="flex-grow-1 text-dark">
+          </div>
+
+          <div class="d-grid gap-2">
+            <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&dsh=S-636383347%3A1779725996837639&emr=1&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&osid=1&passive=1209600&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin&ifkv=AWa2PatniPunjvQ33J339JkIo9b1STWJ50yRzdVkwO_iaPdcu2MrlcVhlyR4OAZiVfvUEwfkv0yfgQ" class="btn btn-outline-danger bg-white d-flex align-items-center justify-content-center gap-2 shadow-sm">
+              <i class="bi bi-google"></i> Continuar con Google
+            </a>
+            <a href="https://www.facebook.com" class="btn btn-outline-primary bg-white d-flex align-items-center justify-content-center gap-2 shadow-sm">
+              <i class="bi bi-facebook"></i> Continuar con Facebook
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 d-none d-md-block bg-login-image px-0">
+      </div>
+
+    </div>
+  </main>
+
+  <div class="modal fade" id="recoverModal" tabindex="-1" aria-labelledby="recoverModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-md">
+      <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+        
+        <div class="bg-dark text-white p-4 text-center">
+          <div class="mb-3">
+            <i class="fa-solid fa-lock fs-1 text-warning"></i>
+          </div>
+          <h4 class="fw-bold mb-1" id="recoverModalLabel">¿Olvidaste tu contraseña?</h4>
+          <p class="mb-0 small opacity-75">Recupera el acceso a tu cuenta en pocos pasos</p>
+        </div>
+
+        <div class="modal-body p-4 text-dark">
+          <div class="alert alert-light border d-flex align-items-start gap-3 rounded-3">
+            <i class="fa-solid fa-envelope text-warning fs-5 mt-1"></i>
+            <div class="small text-muted">
+              Ingresa el correo asociado a tu cuenta y te enviaremos un enlace seguro para restablecer tu contraseña.
+            </div>
+          </div>
+
+          <form action="./404.html">
+            <div class="mb-4">
+              <label for="recoverEmail" class="form-label fw-semibold">Correo Electrónico</label>
+              <div class="input-group">
+                <span class="input-group-text bg-white">
+                  <i class="fa-solid fa-at text-muted"></i>
+                </span>
+                <input type="email" class="form-control py-2" id="recoverEmail" placeholder="tu-correo@ejemplo.com" required>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-warning w-100 py-2 fw-semibold rounded-3 shadow-sm">
+              <i class="fa-solid fa-paper-plane me-2"></i> Enviar enlace de recuperación
+            </button>
+          </form>
+        </div>
+
+        <div class="modal-footer border-0 justify-content-center pb-4">
+          <button type="button" class="btn btn-outline-secondary rounded-pill px-4" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-white py-4">
+  <div class="container">
+    <div class="row text-center text-md-start">
+      
+      <div class="col-12 col-md-6 col-lg-4 mb-4">
+        <h4><i class="fa-solid fa-utensils"></i> Recetas Locas</h4>
+        <p>El mejor blog de recetas fáciles.</p>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4 mb-4">
+  <h5 class="mb-3">Redes Sociales</h5>
+  
+  <p>
+    <a href="https://www.facebook.com" target="_blank" class="text-white text-decoration-none">
+      <i class="fa-brands fa-facebook me-2"></i> Facebook
+    </a>
+  </p>
+
+  <p>
+    <a href="https://www.instagram.com" target="_blank" class="text-white text-decoration-none">
+      <i class="fa-brands fa-instagram me-2"></i> Instagram
+    </a>
+  </p>
+
+  <p>
+    <a href="https://www.youtube.com" target="_blank" class="text-white text-decoration-none">
+      <i class="fa-brands fa-youtube me-2"></i> YouTube
+    </a>
+  </p>
+</div>
+
+      <div class="col-12 col-md-12 col-lg-4 mb-4">
+        <h5>Información</h5>
+        <p>Contacto: recetaslocas@gmail.com</p>
+      </div>
+
+    </div>
+  </div>
+</footer>
+ 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
