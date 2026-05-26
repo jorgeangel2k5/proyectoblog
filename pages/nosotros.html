@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Nosotros | Recetas Locas</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- CSS principal -->
+  <link rel="stylesheet" href="/style/style.css">
+
+  <!-- CSS propio -->
+  <link rel="stylesheet" href="/style/nosotros.css">
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍴</text></svg>">
+
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+
+        <a class="navbar-brand" href="../index.html">
+          <i class="fa-solid fa-utensils"></i> Recetas Locas
+        </a>
+
+        <button class="navbar-toggler" type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+
+            <a class="nav-link" href="../index.html">
+              <i class="fa-solid fa-house"></i> Inicio
+            </a>
+
+            <a class="nav-link" href="./login.html">
+              <i class="fa-solid fa-user"></i> Login
+            </a>
+
+            <button class="btn btn-warning mx-2"
+              data-bs-toggle="modal"
+              data-bs-target="#modalSuscripcion">
+              Suscribirse
+            </button>
+
+            <a class="nav-link" href="./galeria.html">
+            <i class="fa-solid fa-image"></i> Galería
+            </a>
+
+            <a class="nav-link" href="./contacto.html">
+              <i class="fa-solid fa-envelope"></i> Contacto
+            </a>
+
+            <a class="nav-link active" href="./nosotros.html">
+              <i class="fa-solid fa-circle-info"></i> Nosotros
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- MODAL SUSCRIPCIÓN -->
+<div class="modal fade" id="modalSuscripcion" tabindex="-1">
+
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+
+      <div class="modal-header">
+
+        <h5 class="modal-title">
+          Suscribirse al Blog
+        </h5>
+
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal">
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label class="form-label">
+              Nombre
+            </label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Ingrese su nombre">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">
+              Email
+            </label>
+            <input
+              type="email"
+              class="form-control"
+              placeholder="Ingrese su email">
+          </div>
+          <a href="./404.html" class="btn btn-success w-100">
+            Suscribirme
+          </a>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+  </header>
+
+  <main class="container nosotros-page">
+
+    <section class="presentacion-nosotros text-center my-5">
+      <h1 class="titulo-nosotros">Sobre Nosotros</h1>
+
+      <p class="texto-nosotros">
+        Somos un equipo apasionado por la cocina y la creación
+        de recetas prácticas, accesibles y fáciles de preparar,
+        compartiendo ideas útiles para toda la comunidad.
+      </p>
+    </section>
+
+    <section class="mision-nosotros my-5">
+      <div class="card card-mision p-4">
+        <h2 class="subtitulo-nosotros text-center">Nuestra Misión</h2>
+
+        <p class="texto-nosotros text-center">
+          Brindar recetas útiles, rápidas y pensadas para resolver
+          necesidades reales, manteniendo una experiencia clara
+          y moderna para todos los usuarios.
+        </p>
+      </div>
+    </section>
+
+    <section class="frase-nosotros text-center my-5">
+      <blockquote class="frase-grupal">
+        “Las mejores recetas nacen de la creatividad
+         y las ganas de compartir.”
+      </blockquote>
+    </section>
+
+ <section class="equipo-nosotros my-5">
+
+  <h2 class="subtitulo-nosotros text-center mb-4">
+    Nuestro Equipo
+  </h2>
+
+  <div class="row text-center">
+
+    <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+
+      <img
+        src="/assets/isaias.jpeg"
+        alt="Isaías"
+        class="team-img">
+
+      <h5 class="nombre-equipo">
+        Isaías Lescano
+      </h5>
+
+    </div>
+
+    <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+
+      <img
+        src="/assets/angel.jpeg"
+        alt="Compañero 1"
+        class="team-img">
+
+      <h5 class="nombre-equipo">
+        Jorge Angel
+      </h5>
+
+    </div>
+
+    <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+
+      <img
+        src="/assets/lizandro.jpeg"
+        alt="Compañero 2"
+        class="team-img">
+
+      <h5 class="nombre-equipo">
+        Lizandro Daud
+      </h5>
+
+    </div>
+
+    <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+
+      <img
+        src="/assets/facundo.jpeg"
+        alt="Compañero 3"
+        class="team-img">
+
+      <h5 class="nombre-equipo">
+        Facundo Sosa
+      </h5>
+
+    </div>
+
+  </div>
+
+  </section>
+
+  </main>
+<footer class="bg-dark text-white py-4 mt-5">    
+    <div class="container">      
+      <div class="row text-center text-md-start">
+        <div class="col-12 col-md-6 col-lg-4 mb-4">          
+          <h4 class="text-white"><i class="fa-solid fa-utensils"></i> Recetas Locas</h4>          
+          <p class="text-white">El mejor blog de recetas fáciles.</p>        
+        </div>
+        
+        <div class="col-12 col-md-6 col-lg-4 mb-4">          
+          <h5 class="mb-3 text-white">Redes Sociales</h5>          
+          <p class="mb-2">            
+            <a href="https://www.facebook.com" target="_blank" class="text-white text-decoration-none">              
+              <i class="fa-brands fa-facebook me-2 text-primary"></i> Facebook            
+            </a>          
+          </p>          
+          <p class="mb-2">            
+            <a href="https://www.instagram.com" target="_blank" class="text-white text-decoration-none">              
+              <i class="fa-brands fa-instagram me-2 text-danger"></i> Instagram            
+            </a>          
+          </p>          
+          <p class="mb-2">            
+            <a href="https://www.youtube.com" target="_blank" class="text-white text-decoration-none">              
+              <i class="fa-brands fa-youtube me-2 text-danger"></i> YouTube            
+            </a>          
+          </p>        
+        </div>
+        
+        <div class="col-12 col-md-12 col-lg-4 mb-4">          
+          <h5 class="text-white">Información</h5>          
+          <p class="text-white">Contacto: recetaslocas@gmail.com</p>        
+        </div>
+      </div>    
+      <hr class="border-secondary">
+      <div class="text-center text-white-50 small">
+        <p class="mb-0">&copy; 2026 Recetas Locas. Todos los derechos reservados.</p>
+      </div>
+    </div>  
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
